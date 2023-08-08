@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'anim_search_app_bar_view.dart';
 
 class AnimSearchAppBar extends StatefulWidget {
+  final VoidCallback? onCancel;
+
   final double radius;
 
   final TextEditingController? cSearch;
@@ -53,6 +55,7 @@ class AnimSearchAppBar extends StatefulWidget {
 
   const AnimSearchAppBar({
     Key? key,
+    this.onCancel,
     this.radius = 10,
     this.cSearch,
     this.searchFocusNode,
